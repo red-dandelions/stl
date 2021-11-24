@@ -45,6 +45,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/vanilla/CLionProjects/stl/test/lib"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib/def"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib/except"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
@@ -67,6 +70,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/vanilla/CLionProjects/stl/test/lib"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib/def"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib/except"/>
+					<Add directory="/Users/vanilla/CLionProjects/stl/lib"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>

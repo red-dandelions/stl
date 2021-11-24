@@ -15,6 +15,9 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/lib"
+  "../lib/def"
+  "../lib/except"
+  "../lib"
   "/usr/local/include"
   )
 
