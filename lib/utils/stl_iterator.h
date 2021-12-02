@@ -15,12 +15,12 @@
 #include "stl_iterator_base.h"
 
 namespace mystl {
-    /*******************************************************************************
- * reverse_iterator迭代器，继承iterator类
- * 支持*和->运算符操作
- * 支持后++和前++，后--和前--， 以及各种运算符，比较符。
- ******************************************************************************/
-    /*-------------------  reverse_iterator类的实现  ---------------------------------*/
+    /**
+     * reverse_iterator类的实现
+     * reverse_iterator迭代器，继承iterator类
+     * 支持*和->运算符操作
+     * 支持后++和前++，后--和前--， 以及各种运算符，比较符。
+     */
     template<typename _Iterator>
     class reverse_iterator
             : public iterator<typename iterator_traits<_Iterator>::iterator_category,
@@ -33,10 +33,10 @@ namespace mystl {
         typedef iterator_traits<_Iterator> __traits_type;
 
     public:
-        typedef _Iterator iterator_type;
+        typedef _Iterator                               iterator_type;
         typedef typename __traits_type::difference_type difference_type;
-        typedef typename __traits_type::pointer pointer;
-        typedef typename __traits_type::reference reference;
+        typedef typename __traits_type::pointer         pointer;
+        typedef typename __traits_type::reference       reference;
 
         //各种构造函数
         reverse_iterator() : current() {}
@@ -110,7 +110,9 @@ namespace mystl {
         operator[](difference_type _n) const { return *(*this + _n); }
     };
 
-    /*-------------------  reverse_iterator类各种比较运算符的实现  --------------------------*/
+    /**
+     * reverse_iterator类各种比较运算符的实现
+     */
     template<typename _Iterator>
     inline bool
     operator==(const reverse_iterator<_Iterator> &_x,
@@ -188,5 +190,6 @@ namespace mystl {
     inline typename reverse_iterator<_Iterator_L>::difference_type
     operator-(const reverse_iterator<_Iterator_L> &_x,
               const reverse_iterator<_Iterator_R> &_y) { return _y.base() - _x.base(); }
-}
+} //namespace mystl
+
 #endif //STL_STL_ITERATOR_H

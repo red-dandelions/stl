@@ -23,7 +23,6 @@ namespace mystl
      *
      * allocate和deallocate负责申请和释放内存
      */
-
     template<typename _Tp>
     class allocator_base {
     public:

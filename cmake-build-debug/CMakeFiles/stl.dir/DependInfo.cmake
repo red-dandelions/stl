@@ -17,6 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/lib"
   "../lib/def"
   "../lib/except"
+  "../lib/utils"
   "../lib"
   "/usr/local/include"
   )
