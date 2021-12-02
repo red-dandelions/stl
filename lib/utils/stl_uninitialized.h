@@ -5,7 +5,7 @@
 #ifndef STL_STL_UNINITIALIZED_H
 #define STL_STL_UNINITIALIZED_H
 
-#include "algorithm.h"
+#include "stl_algorithm.h"
 #include "stl_iterator_base.h"
 #include "stl_construct.h"
 #include "stl_except.h"
